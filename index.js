@@ -24,11 +24,6 @@ submit.addEventListener("click", async () => {
         const section = document.querySelector("section")
         const a = document.createElement("a");
 
-        // let description = item.description;
-        // p.append(description)
-        // let repos = item.name;
-       
-
         //Timer.... when was the repo cerated?...........
         let dateCreated = item.created_at;
         let dateMilliSec = new Date(dateCreated).getTime();
@@ -44,7 +39,6 @@ submit.addEventListener("click", async () => {
         const restDays = Math.floor((timeDiffMilliSec % month) / day)
         const dateInnertext = `Created ${diffInMonths} Months and ${restDays} days ago`
         
-
         let description = item.description;
         p.append(description)
         let repos = item.name;
