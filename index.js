@@ -8,13 +8,9 @@ submit.addEventListener("click", async () => {
     let url = "https://api.github.com/users/"+userNow+"/repos"
     const response = await fetch(url);
     const info = await response.json();
-    console.log(info)
-
-
 
     info.forEach((item) => {
-
-        
+ 
         const divLeft = document.createElement("DIV")
         const divRight = document.createElement("DIV")
         const divBox = document.createElement("DIV")
